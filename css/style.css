@@ -270,3 +270,119 @@ body{
 .about-page-img img{
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    /* 基础样式调整 */
+    body {
+        font-size: 14px;
+    }
+    /* 顶部导航调整 */
+    .page-top {
+        height: auto;
+        padding: 10px 5%;
+        flex-direction: column;
+        text-align: center;
+    }    
+    .page-top a {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }    
+    .page-top p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    /* 内容区域布局调整 */
+    .page-con {
+        flex-direction: column;
+        margin-top: 100px; /* 根据顶部高度调整 */
+    }    
+    .pc-nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        box-shadow: 0 4px 4px 0 #fbaed1;
+    }    
+    .nav {
+        margin-top: 0;
+        width: 70%;
+    }   
+    .nav a {
+        display: inline-block;
+        width: auto;
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+    .code {
+        width: 30%;
+        padding: 10px 0;
+    }    
+    .code img {
+        width: 60px;
+        height: 60px;
+    }   
+    .code p, .code h6 {
+        display: none; /* 移动端隐藏联系方式文字 */
+    }
+    /* 主内容区宽度调整 */
+    .pc-box {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 5%;
+    }
+    /* 首页Banner调整 */
+    .banner {
+        aspect-ratio: 16/9;
+    }    
+    .banner-text {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 0 5%;
+    }
+    /* 专栏内容调整 */
+    .zhuanlan-box ul {
+        flex-direction: column;
+        gap: 10px;
+    }    
+    .zhuanlan-box ul li {
+        width: 100%;
+    }
+    /* 原创内容调整 */
+    .yuan-box-list {
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 10px;
+    }    
+    .yc1-img img, .yc2-img img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px 0;
+    }    
+    .yc1-text, .yc2-text {
+        margin-left: 0;
+    }    
+    .yc1-text h3, .yc2-text h3 {
+        font-size: 18px;
+        margin-top: 0;
+    }    
+    .yc1-text p, .yc2-text p {
+        line-height: 1.8;
+        font-size: 13px;
+    }
+    /* 关于页面调整 */
+    .about-page {
+        flex-direction: column;
+    }   
+    .about-page-text, .about-page-img {
+        width: 100%;
+    }    
+    .about-page-text {
+        padding: 20px 15px;
+    }   
+    .about-page-text h1 {
+        font-size: 24px;
+    }
+    .about-page-text p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
