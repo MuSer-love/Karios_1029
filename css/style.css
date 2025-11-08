@@ -62,7 +62,7 @@ body{
     width: 87%;
     box-sizing: border-box;
     padding-bottom: 50px;
-    margin-top: 0px;
+    margin-top: -50px;
     padding-top: 0;
 }
 .nav{
@@ -103,7 +103,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -25px;
     padding-top: 0;
 }
 .banner{
@@ -133,13 +133,18 @@ body{
     margin-top: 20px;
 }
 .common-title{
+    position: absolute;
+    top: 0;
+    left: 20px;
     font-size: 22px;
     color: #cd9fac;
-    padding-left: 10px;
+    padding: 5px 10px;
     border-left: 5px solid #906974;
     margin-bottom: 15px;
-    margin-top: 20px;
+    margin: 0;
     margin-left: 20px;
+    background: #ffe6ee;
+    z-index: 10;
 }
 .zhuanlan-box ul{
     display: flex;
