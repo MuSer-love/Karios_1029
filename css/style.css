@@ -323,3 +323,121 @@ body{
 .about-page-img img{
     width: 100%;
 }
+/* 移动端适配 */
+@media (max-width: 768px) {
+    /* 顶部导航调整 */
+    .page-top {
+        height: auto;
+        padding: 15px 2%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .page-top a {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .page-top p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    /* 侧边导航转为顶部导航 */
+    .pc-nav {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        z-index: 998;
+    }
+    
+    .nav {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .nav a {
+        margin: 0 5px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* 内容区域调整 */
+    .pc-box {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 60px; /* 预留底部导航空间 */
+    }
+    
+    /* 专栏布局调整为单列 */
+    .zhuanlan-box ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .zhuanlan-box ul li {
+        width: 100%;
+    }
+    
+    /* 原创内容布局调整 */
+    .yuan-box-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .yc1-img img, .yc2-img img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 0 15px 0;
+    }
+    
+    .yc1-text, .yc2-text {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .yc1-text h3, .yc2-text h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    /* 关于页面布局调整 */
+    .about-page {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .about-page-text, .about-page-img {
+        width: 100%;
+    }
+    
+    .about-page-text {
+        padding: 15px;
+    }
+    
+    .about-page-text h1 {
+        font-size: 28px;
+    }
+    
+    .about-page-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    /* 首页banner文本调整 */
+    .banner-text {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
