@@ -274,3 +274,26 @@ body{
 .about-page-img img{
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    /* 基础样式调整 */
+    body {
+        font-size: 14px;
+    }
+    /* 顶部导航调整 */
+    .page-top {
+        display: flex;
+        height: auto;
+        padding: 0 5%;
+        flex-direction: row;
+        text-align: center;
+        list-style: none;
+    }    
+    .page-top a {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }    
+    .page-top p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
