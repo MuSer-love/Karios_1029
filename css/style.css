@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +8,11 @@ a{
 }
 body{
      font-size: 16px;
-     background: rgb(255, 226, 244);
+     background: rgb(255, 205, 236);
+}
+.footer {
+    background-color: rgb(253, 214, 233);
+    width: 100%;
 }
 .page{
     width: 100%;
@@ -38,16 +43,18 @@ body{
     display: flex;
     min-height: 87.2vh;
     margin-top: 12.8vh;
-    background: rgb(255, 226, 244);
+    background: rgb(253, 214, 233);
 }
 .pc-nav{
     position: fixed;
     top: 0vh;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: space-between;
     left: 0%;
     width: 13%;
+    height: 100vh;
     background: rgb(255, 214, 225);
     box-shadow: 4px 0 4px 0 #fbaed1;
 }
@@ -55,12 +62,11 @@ body{
     margin-left: 13%;
     width: 87%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding-bottom: 50px;
 }
 .nav{
     width: 100%;
-    margin-top: 6vh;
-    margin-bottom: 1vh;
+    margin-top: 14vh;
 }
 .nav a{
     display: block;
@@ -75,6 +81,7 @@ body{
 .code{
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
 }
 .code img{
     width: 150px;
@@ -92,7 +99,8 @@ body{
 }
 .home-top{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 0px;
 }
@@ -106,4 +114,158 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.banner-text{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #cd9fac;
+    text-align: center;
+    max-width: 80%;
+    box-sizing: border-box;
+    background-color: rgb(253, 214, 233);
+}
+.zhuanlan{
+    margin-top: 20px;
+}
+.common-title{
+    font-size: 22px;
+    color: #cd9fac;
+    padding-left: 10px;
+    border-left: 5px solid #906974;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.zhuanlan-box ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+.zhuanlan-box ul li{
+    width: 30%;
+    background: #ffe6ee;
+    border-radius: 10px;
+}
+.zhuanlan-box ul li img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.zhuanlan-box ul li p{
+    padding: 15px 0;
+    text-align: center;
+    color: #cd9fac;
+    font-size: 18px;
+}
+.yuan-box-list{
+    display: flex;
+    background: #ffe6ee;
+    border-radius: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.yc1-img img{
+    width: 153.34px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.yc1-text{
+    margin-left: 30px;
+}
+.yc1-text h3{
+    font-size: 24px;
+    color: #906974;
+    margin-top: 40px;
+}
+.yc1-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #cd9fac;
+    line-height: 40px;
+    margin: 20px 0;
+}
+.yc1-text span{
+    display: flex;
+    align-items: center;
+    color: #c9b3b9;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.yc2-img img{
+    width: 153.34px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.yc2-text{
+    margin-left: 30px;
+}
+.yc2-text h3{
+    font-size: 24px;
+    color: #906974;
+    margin-top: 40px;
+}
+.yc2-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #cd9fac;
+    line-height: 40px;
+    margin: 20px 0;
+}
+.yc2-text span{
+    display: flex;
+    align-items: center;
+    color: #c9b3b9;
+    font-size: 10px;
+    font-weight: 400;
+}
+.about-page{
+    display: flex;
+    background: #ffe6ee;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px #ccc;
+    margin: 0;
+}
+.about-page-text{
+    width: 60%;
+    padding: 38px 64px 38px 64px;
+}
+.about-page-text h1{
+    font: size 40px; ;
+    font-weight: 400;
+    color: #906974;
+}
+.about-page-text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #c9b3b9;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.about-page-text p span{
+    margin-right: 20px;
+}
+.about-page-text h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #d5b2c7;
+    margin: 50px 0 10px;
+}
+.about-page-img{
+    width: 40%;
+}
+.about-page-img img{
+    width: 100%;
 }
