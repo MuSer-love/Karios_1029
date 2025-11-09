@@ -49,6 +49,11 @@ body{
     margin-top: 12.8vh;
     background: rgb(253, 214, 233);
 }
+.signature {
+    display: block;
+    text-align: right; /* 右对齐替代空格 */
+    margin-top: 10px;
+}
 .pc-nav{
     position: fixed;
     top: 0vh;
@@ -119,7 +124,10 @@ body{
 }
 .banner{
     width: 100%;
-    aspect-ratio: 4/3;
+    position: relative;
+    height: 0;
+    padding-bottom: 75%; /* 通用4:3比例 */
+    overflow: hidden;
     overflow: hidden;
     margin-top: 20px;
     border-radius: 12px;
@@ -131,6 +139,7 @@ body{
     object-fit: cover;
     margin-top: -1;
     padding-top: 0;
+    position: absolute;
 }
 .banner-text{
     margin-top: 20px;
@@ -281,7 +290,7 @@ body{
     padding: 38px 64px 38px 64px;
 }
 .about-page-text h1{
-    font: size 40px; ;
+    font-size:  40px; ;
     font-weight: 400;
     color: #906974;
     margin-bottom: 20px;
@@ -345,6 +354,8 @@ body{
     .page-top p {
         font-size: 12px;
         line-height: 1.5;
+        margin-top: 10px;
+        white-space: normal;
     }
     
     /* 侧边导航转为顶部导航 */
@@ -353,11 +364,12 @@ body{
         top: auto;
         bottom: 0;
         width: 100%;
-        height: auto;
+        height: 60px;
         flex-direction: row;
         justify-content: space-around;
         padding: 10px 0;
         z-index: 998;
+        align-items: center;
     }
     
     .nav {
@@ -371,7 +383,7 @@ body{
     }
     .nav a {
         margin: 0 5px;
-        padding: 8px 12px;
+        padding: 8px 15px;
         font-size: 14px;
     }
     
@@ -381,7 +393,7 @@ body{
         margin-top: 0;
         width: 100%;
         padding: 15px;
-        margin-bottom: 60px; /* 预留底部导航空间 */
+        margin-bottom: 80px; /* 预留底部导航空间 */
     }
     
     /* 专栏布局调整为单列 */
@@ -403,8 +415,8 @@ body{
     
     .yc1-img img, .yc2-img img {
         width: 100%;
-        max-width: 300px;
-        margin: 0 0 15px 0;
+        padding: 0 15px; /* 增加内边距 */
+        box-sizing: border-box;
     }
     
     .yc1-text, .yc2-text {
@@ -448,7 +460,7 @@ body{
         padding: 15px;
     }
     .banner {
-        height: 0;
+        height: auto;
         padding-bottom: 75%; /* 4:3比例（3/4=75%） */
   }
 }
