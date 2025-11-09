@@ -332,135 +332,144 @@ body{
 .about-page-img img{
     width: 100%;
 }
-/* 移动端适配 */
+/* 移动端增强适配 */
 @media (max-width: 768px) {
-    /* 顶部导航调整 */
-    .page-top {
-        height: auto;
-        padding: 15px 2%;
-        flex-direction: column;
-        text-align: center;
-    }
-    .page-con {
-        min-height: auto; /* 移除固定最小高度 */
-        padding-bottom: 60px; /* 为底部导航预留空间 */
-    }
-
-    .page-top a {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-    
-    .page-top p {
-        font-size: 12px;
-        line-height: 1.5;
-        margin-top: 10px;
-        white-space: normal;
-    }
-    
-    /* 侧边导航转为顶部导航 */
-    .pc-nav {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px 0;
-        z-index: 998;
-        align-items: center;
-    }
-    
-    .nav {
-        margin-top: 0;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .nav br {
-        display: none;
-    }
-    .nav a {
-        margin: 0 5px;
-        padding: 8px 15px;
+    /* 全局字体调整 */
+    body {
         font-size: 14px;
     }
     
-    /* 内容区域调整 */
-    .pc-box {
-        margin-left: 0;
+    /* 顶部区域优化 */
+    .page-top {
+        position: relative; /* 改为相对定位，避免遮挡内容 */
+        height: auto;
+        padding: 15px 5%;
+    }
+    
+    .page-con {
+        margin-top: 0; /* 移除顶部间距，因为page-top已改为相对定位 */
+    }
+    
+    /* 签名样式优化 */
+    .signature {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    
+    /* 导航栏优化 */
+    .nav a {
+        padding: 6px 10px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    
+    /* 首页banner优化 */
+    .home-top {
         margin-top: 0;
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 80px; /* 预留底部导航空间 */
+        padding-top: 10px;
     }
     
-    /* 专栏布局调整为单列 */
-    .zhuanlan-box ul {
-        flex-direction: column;
-        gap: 15px;
+    .banner {
+        margin-top: 10px;
+        border-radius: 8px;
     }
     
-    .zhuanlan-box ul li {
-        width: 100%;
+    /* 专栏区域优化 */
+    .zhuanlan {
+        padding: 20px 15px;
+        margin: 20px 0;
     }
     
-    /* 原创内容布局调整 */
+    .common-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .zhuanlan-box ul li p {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    
+    /* 原创内容优化 */
     .yuan-box-list {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+        margin: 10px 0;
+        padding: 10px;
     }
     
     .yc1-img img, .yc2-img img {
-        width: 100%;
-        padding: 0 15px; /* 增加内边距 */
-        box-sizing: border-box;
-    }
-    
-    .yc1-text, .yc2-text {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+        margin: 10px 0;
+        border-radius: 8px;
     }
     
     .yc1-text h3, .yc2-text h3 {
-        font-size: 18px;
-        margin-top: 15px;
-    }
-    
-    /* 关于页面布局调整 */
-    .about-page {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    .about-page-text, .about-page-img {
-        width: 100%;
-    }
-    
-    .about-page-text {
-        padding: 15px;
-    }
-    
-    .about-page-text h1 {
-        font-size: 28px;
-    }
-    
-    .about-page-text p {
         font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+    
+    .yc1-text p, .yc2-text p {
+        font-size: 13px;
+        margin: 10px 0;
         line-height: 1.6;
     }
     
-    /* 首页banner文本调整 */
-    .banner-text {
-        max-width: 100%;
-        font-size: 14px;
+    /* 关于页面优化 */
+    .about-page {
+        margin: 20px 0;
         padding: 15px;
     }
-    .banner {
+    
+    .about-page-text {
+        padding: 10px;
+    }
+    
+    .about-page-text h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .about-page-text p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+    
+    .about-page-text h2,
+    .about-page-text h3 {
+        margin: 30px 0 10px;
+        font-size: 18px;
+    }
+    
+    /* 图片自适应优化 */
+    img {
+        max-width: 100%;
         height: auto;
-        padding-bottom: 75%; /* 4:3比例（3/4=75%） */
-  }
+    }
+    
+    /* 触摸反馈优化 */
+    a, .nav a, .zhuanlan-box ul li, .yuan-box-list {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    /* 调整底部导航高度 */
+    .pc-nav {
+        height: 55px;
+    }
+    
+    /* 为小屏幕手机增加额外适配 */
+    @media (max-width: 375px) {
+        .page-top a {
+            font-size: 24px;
+        }
+        
+        .nav a {
+            font-size: 12px;
+            padding: 5px 8px;
+        }
+        
+        .yc1-text h3, .yc2-text h3 {
+            font-size: 14px;
+        }
+    }
 }
